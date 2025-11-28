@@ -12,23 +12,37 @@ import java.util.List;
  */
 public class Kardex {
 
-    private float costoPromedio;
-    private int saldoCantidad;
-    private float saldoValor;
+    private int stock;
+    private ItemKardex itemKardex;
+    private Producto producto;
 
-    public void registrarEntrada() {
-        // TODO implement here
+    public Kardex(int stock, ItemKardex itemKardex, Producto producto) {
+        this.stock = stock;
+        this.itemKardex = itemKardex;
+        this.producto = producto;
     }
 
-    public void registrarSalida() {
-        // TODO implement here
+    public int getStock() {
+        return stock;
     }
 
-    public void obtenerSaldo() {
-        // TODO implement here
+    public void setStock(int stock) {
+        this.stock = stock;
     }
 
-    public void obtenerCostoPromedio() {
-        // TODO implement here
+    public ItemKardex getItemKardex() {
+        return itemKardex;
+    }
+
+    public void setItemKardex(ItemKardex itemKardex) {
+        this.itemKardex = itemKardex;
+    }
+
+    public Producto getProducto() {
+        return producto;
+    }
+
+    public void setProducto(Producto producto) {
+        this.producto = producto;
     }
 }

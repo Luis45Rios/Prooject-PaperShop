@@ -10,22 +10,25 @@ package edu.unl.cc.papershop_project.domain;
  */
 public class Producto {
 
-    private String codigo; 
+    private String codigo;
     private String nombre;
     private String marca;
     private String tipo;
-    private float PVP;
-    private boolean tieneIVA;
-    private float IVA;
+    private float pvp;
+    private boolean tieneIva;
+    private float iva;
+    
+    private Kardex kardex;
 
-    public Producto(String codigo, String nombre, String marca, String tipo, float PVP, boolean tieneIVA, float IVA) {
+    public Producto(String codigo, String nombre, String marca, String tipo, float pvp, boolean tieneIva, float iva, Kardex kardex) {
         this.codigo = codigo;
         this.nombre = nombre;
         this.marca = marca;
         this.tipo = tipo;
-        this.PVP = PVP;
-        this.tieneIVA = tieneIVA;
-        this.IVA = IVA;
+        this.pvp = pvp;
+        this.tieneIva = tieneIva;
+        this.iva = iva;
+        this.kardex = kardex;
     }
 
     public String getCodigo() {
@@ -60,27 +63,35 @@ public class Producto {
         this.tipo = tipo;
     }
 
-    public float getPVP() {
-        return PVP;
+    public float getPvp() {
+        return pvp;
     }
 
-    public void setPVP(float PVP) {
-        this.PVP = PVP;
+    public void setPvp(float pvp) {
+        this.pvp = pvp;
     }
 
-    public boolean isTieneIVA() {
-        return tieneIVA;
+    public boolean isTieneIva() {
+        return tieneIva;
     }
 
-    public void setTieneIVA(boolean tieneIVA) {
-        this.tieneIVA = tieneIVA;
+    public void setTieneIva(boolean tieneIva) {
+        this.tieneIva = tieneIva;
     }
 
-    public float getIVA() {
-        return IVA;
+    public float getIva() {
+        return iva;
     }
 
-    public void setIVA(float IVA) {
-        this.IVA = IVA;
+    public void setIva(float iva) {
+        this.iva = iva;
+    }
+
+    public Kardex getKardex() {
+        return kardex;
+    }
+
+    public void setKardex(Kardex kardex) {
+        this.kardex = kardex;
     }
 }

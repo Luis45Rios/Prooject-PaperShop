@@ -10,32 +10,22 @@ package edu.unl.cc.papershop_project.administracion;
  */
 public class Usuario {
 
-    private String nombre;
-    private String apellido;
+    private Rol rol;
     private String nombreUsuario;
     private String clave;
 
-    public Usuario(String nombre, String apellido, String nombreUsuario, String clave) {
-        this.nombre = nombre;
-        this.apellido = apellido;
+    public Usuario(Rol rol, String nombreUsuario, String clave) {
+        this.rol = rol;
         this.nombreUsuario = nombreUsuario;
         this.clave = clave;
     }
 
-    public String getNombre() {
-        return nombre;
+    public Rol getRol() {
+        return rol;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public String getApellido() {
-        return apellido;
-    }
-
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
+    public void setRol(Rol rol) {
+        this.rol = rol;
     }
 
     public String getNombreUsuario() {

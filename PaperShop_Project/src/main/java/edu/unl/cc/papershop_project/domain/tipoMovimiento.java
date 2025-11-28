@@ -9,5 +9,6 @@ package edu.unl.cc.papershop_project.domain;
  * @author luisr
  */
 public enum tipoMovimiento {
-    
+    ENTRADA,
+    SALIDA
 }
