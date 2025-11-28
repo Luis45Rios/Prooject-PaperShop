@@ -13,10 +13,10 @@ import java.util.List;
 public class Kardex {
 
     private int stock;
-    private ItemKardex itemKardex;
+    private List<ItemKardex> itemKardex;
     private Producto producto;
 
-    public Kardex(int stock, ItemKardex itemKardex, Producto producto) {
+    public Kardex(int stock, List<ItemKardex> itemKardex, Producto producto) {
         this.stock = stock;
         this.itemKardex = itemKardex;
         this.producto = producto;
@@ -30,11 +30,11 @@ public class Kardex {
         this.stock = stock;
     }
 
-    public ItemKardex getItemKardex() {
+    public List<ItemKardex> getItemKardex() {
         return itemKardex;
     }
 
-    public void setItemKardex(ItemKardex itemKardex) {
+    public void setItemKardex(List<ItemKardex> itemKardex) {
         this.itemKardex = itemKardex;
     }
 

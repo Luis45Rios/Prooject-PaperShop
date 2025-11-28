@@ -11,7 +11,18 @@ import edu.unl.cc.papershop_project.administracion.Persona;
  */
 public class Cliente extends Persona{
     
-    public Cliente(String nombres, String apellidos, String cedula, String direccion, String celular) {
+    private NotaVenta notaVenta;
+
+    public Cliente(NotaVenta notaVenta, String nombres, String apellidos, String cedula, String direccion, String celular) {
         super(nombres, apellidos, cedula, direccion, celular);
+        this.notaVenta = notaVenta;
+    }
+
+    public NotaVenta getNotaVenta() {
+        return notaVenta;
+    }
+
+    public void setNotaVenta(NotaVenta notaVenta) {
+        this.notaVenta = notaVenta;
     }
 }

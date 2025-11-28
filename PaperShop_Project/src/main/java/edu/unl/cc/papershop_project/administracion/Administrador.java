@@ -4,6 +4,8 @@
  */
 package edu.unl.cc.papershop_project.administracion;
 
+import edu.unl.cc.papershop_project.domain.Proveedor;
+
 /**
  *
  * @author luisr
@@ -11,6 +13,7 @@ package edu.unl.cc.papershop_project.administracion;
 public class Administrador extends Persona{
     
     private Usuario usuario;
+    private Proveedor proveedor;
 
     public Administrador(Usuario usuario, String nombres, String apellidos, String cedula, String direccion, String celular) {
         super(nombres, apellidos, cedula, direccion, celular);
