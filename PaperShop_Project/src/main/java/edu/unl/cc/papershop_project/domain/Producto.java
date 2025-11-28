@@ -10,7 +10,7 @@ package edu.unl.cc.papershop_project.domain;
  */
 public class Producto {
 
-    private String codigo;
+    private String codigo; 
     private String nombre;
     private String marca;
     private String tipo;

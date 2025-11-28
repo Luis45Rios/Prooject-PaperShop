@@ -15,7 +15,6 @@ public class Kardex {
     private float costoPromedio;
     private int saldoCantidad;
     private float saldoValor;
-    private List<KardexMovimiento> movimientos;
 
     public void registrarEntrada() {
         // TODO implement here

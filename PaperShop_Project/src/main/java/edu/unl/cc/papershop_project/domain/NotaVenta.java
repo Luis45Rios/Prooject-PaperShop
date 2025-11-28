@@ -10,12 +10,12 @@ import java.time.LocalDate;
  *
  * @author luisr
  */
-public class NotaDeVenta {
+public class NotaVenta {
 
     private LocalDate fecha;
     private String codigo;
 
-    public NotaDeVenta(LocalDate fecha, String codigo) {
+    public NotaVenta(LocalDate fecha, String codigo) {
         this.fecha = fecha;
         this.codigo = codigo;
     }

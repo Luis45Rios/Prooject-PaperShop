@@ -15,20 +15,10 @@ public class Venta {
 
     private LocalDate fecha;
     private float total;
-    private List<VentaDetalle> detalle;
 
-    public Venta(LocalDate fecha, float total, List<VentaDetalle> detalle) {
+    public Venta(LocalDate fecha, float total) {
         this.fecha = fecha;
         this.total = total;
-        this.detalle = detalle;
-    }
-
-    /**
-     * @return
-     */
-    public VentaDetalle agregarDetalle() {
-        // TODO implement here
-        return null;
     }
 
     public void clacularTotal() {
